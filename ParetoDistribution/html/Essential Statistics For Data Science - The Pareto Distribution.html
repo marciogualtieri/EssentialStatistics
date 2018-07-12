@@ -12275,7 +12275,7 @@ $( document ).ready(function(){
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">%</span><span class="k">matplotlib</span> notebook
@@ -12359,10 +12359,10 @@ $( document ).ready(function(){
 
 
 
-<div id="9aa7a471-98ff-4c88-907b-37560d074bb2"></div>
+<div id="7a14ebd7-6143-4e23-8644-a23de405f5db"></div>
 <div class="output_subarea output_javascript ">
 <script type="text/javascript">
-var element = $('#9aa7a471-98ff-4c88-907b-37560d074bb2');
+var element = $('#7a14ebd7-6143-4e23-8644-a23de405f5db');
 /* Put everything inside the global mpl namespace */
 window.mpl = {};
 
@@ -13145,7 +13145,806 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_html rendered_html output_subarea ">
-<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAEgCAYAAADVKCZpAAAgAElEQVR4Xu2dB5gURfrG380LG9jALiwLu0hQcs45gwRFQAT1RDAChjPHM+dwxjNn7wz3V88zCyKYlWAWUU8FFbNgQETS/p+3t3sZhgndM92z07tv8cyzy053VfWvquvt76uvq1KgJAIiIAIiIAI+JJDiwzqryiIgAiIgAiIACZg6gQiIgAiIgC8JSMB82WyqtAiIgAiIgARMfUAEREAERMCXBCRgvmw2VVoEREAEREACpj4gAiIgAiLgSwISMF82myotAiIgAiIgAVMfEAEREAER8CUBCZgvm02VFgEREAERkICpD4iACIiACPiSgATMl82mSouACIiACEjA1AdEQAREQAR8SUAC5stmU6VFQAREQAQkYOoDIiACIiACviQgAfNls6nSIiACIiACEjD1AREQAREQAV8SkID5stlUaREQAREQAQmY+oAIiIAIiIAvCUjAfNlsqrQIiIAIiIAETH1ABERABETAlwQkYL5sNlVaBERABERAAqY+IAIiIAIi4EsCEjBfNpsqLQIiIAIiIAFTHxABERABEfAlAQmYL5tNlRYBERABEZCAqQ+IgAiIgAj4koAEzJfNpkqLgAiIgAhIwNQHREAEREAEfElAAubLZlOlRUAEREAEJGDqAyIgAiIgAr4k4DcBuwPARADfA+gUgjiv5xoA4wFsBHAwgDd92TKqtAiIgAiIQEQCfhOwIQA2ALgnjIBRuI42BayvKWb8qSQCIiACIlDHCPhNwIi/JYAnwgjYzQCWALjfbKePAAwD8E0dazddjgiIgAjUewJ1TcAobJcAeNls2UUATgGwvN63tACIgAiIQB0jUJ8F7HAA/CAnJ6dnu3btYm7atz/ahPTcP9GpvFHMeehEERABEUgGAitWrPgRQEky1CVaHeqagMXkQuzZs2fV8uWxG2kFgz5GwaBP8OlF45GW6kek0bqJvhcBEagvBFJSUlYA6OWH6/XjaBtpDmwCgKMCgjiuBdAnWkPEK2D5fT5D0YgP8e45Y5CfnRGtOH0vAiIgAklLQALmXdMwOINBGY0BfAfgbACWYtwEgIJ8PYBxZhj9bDvzX/EKWF63L1A87j28ftpING2U7d3VK2cREAER8JiABMxjwG5nH6+A5XRYi5K93sZzxw9Fm9Jct6un/ERABEQgYQQkYAlD7U5B8QpYwzbfoXTacjx21EB0aV7gTqWUiwiIgAjUAgEJWC1Aj6fIeAUsu/JHNJ35Bu47rC8GtKZ3U0kEREAE/ElAAuazdotXwLLKfkbZrFdw20G9MKpDE59dvaorAiIgAjsISMB81hviFbCM4g0oP+wFXDOjG/buVu6zq1d1RUAEREAC5ts+EK+Apef/gebznsdF+3TG/n0rfMtBFRcBERABWWA+6wPxClhq1hZUHLcAZ05oj0MHt/LZ1au6IiACIiALzLd9IF4BS0ndjsqTn8ZfR7XFX0ft7lsOqrgIiIAIyALzWR+IW8BSgJYnPo3DhrfE6ePb++zqVV0REAERkAXm2z7gioD9dSFmDmlqzIMpiYAIiIBfCcgC87bluEwUd11OA3CbuX1KYImVALhzM1dTXgfgQABfRaqSGwJWOX8xJg8qwNUzunt79cpdBERABDwkIAHzDi5F62MAo01RWgZgJoCVAUX+n7nh5d0ARgDgeoh/8VrAWhz2IsYOaohbD/LFIs7etZByFgER8DUBCZh3zdcfwDkAxppFnGb+vDigyA/MxXy/NBf3/QVAvtcCVvaXVzFscCruO6yfd1evnEVABETAYwISMO8ATzPF6VCzCFpWfc0tVKxS7wPwhulmnALgYXP1+p/CVcsNF2LpvkvRb8gW/Peogd5dvXIWAREQAY8JSMC8A2xHwJqZW6rsBuBFAFMBdALwc1C1anZkrqio6LlmzZqYa52SAjSevAKdBmzA4pOGxpyPThQBERCB2iYgAfOuBey4EANL594mqwA099qFWDz+HbTq/yOWnjnSu6tXziIgAiLgMQEJmHeA080gDqrEWgAM4tgfAOe9rMTl4Bl9uB3AhQC2ATjLawErHPU+yvqvxQfnWdNz3kFQziIgAiLgFQEJmFdkq/MdD+BqM4ye4fIUqfPMnZcfA0A3I4M6qkwX4nwAf3otYAVDVqFowGf430V7IoU+RSUREAER8CEBCZjPGs2NII78fv9D4dCPsOr8ccjOYLS/kgiIgAj4j4AEzGdt5oaA5XZfjeIxH2DZGaNQkpflMwKqrgiIgAhUE5CA+awnuCFgOR2+QuNJ7+D5E4aiVQljR5REQAREwH8EJGA+azM3BKxB6+9QOm05Hp0/EN1aFPiMgKorAiIgArLAfNkH3BCwrObr0PSA13DvIX0wuC2XYVQSAREQAf8RkAXmszZzQ8AySn5Fszkv4YYDemB85zKfEVB1RUAEREAWmC/7gBsClpa/Ec3nLsalUztjv94VvuSgSouACIiALDCf9QE3BCwlcwsqjluAMye0x6GDW/mMgKorAiIgArLAfNkH3BAwvjddefJTOGZkGxw/Zg9fclClRUAEREAWmM/6gDsCBrQ84VnMGtIc5+zV0WcEVF0REAERkAWWiD4QbUdmTkBxM0vGsnNJjFMBPBWpYm4JWOXRz2PqoGJcOb1rIjioDBEISeCrr77CWWedhWeeeQY//fQTysrKMHnyZJx99tkoLCx0RO3hhx/Gddddh7feegubN29Gq1atcOCBB+KEE05AZmbmTnkdfPDBuPtu3nrh04gRI7Bo0SJHddDBiSUgC8w73nZ2ZL4FwFsAbgTQwRSvlokQMO7KPG5QQ9yiXZm96wHKOSKBTz/9FAMGDMD333+PvffeG+3atcPSpUuxePFi7LHHHnjllVdQXFxsi+Lpp5+Oiy++GLm5uZg6dSqKiorw0ksvYfny5Rg5ciSefvppZGRk1OT16KOP4u233w6Z97333ovPPvsMl19+OU488URb5eug2iEgAfOOu53tVG4G8BmASwHw+CsBDEiEgJUd+CqGDE7BA4ezWCURSDyBsWPHYsGCBbj22mtx9NFH11Tg+OOPx1VXXYUjjjgCN910U9SKvfnmm+jZsycKCgqwYsUKw/Jiqqqqwrx584w8rrzySjDfaOnnn39Gs2bNsG3bNqxduxaNG3PDCKVkJSAB865l7GxoyZewFgCgryQHwCgAKxIhYCVTl6HX4E146tjB3hGohznfddddePzxxw031jfffGM89Xfu3Blz58413FnBadiwYXjhhRfw559/4pJLLsG//vUvrF69GjNnzgTzstL999+PW265xch306ZN2G233XDAAQfgpJNOQlbWzutZ0rp46KGHDGuGgzATrZtZs2bhqKOOQmpqaq23DK2vNm3aoGXLluDvgXX67bffDFciBYjWWU4Ob43wiS7I888/37CWaDUFpvXr1xvWGEWN5URLdEEec8wxmDFjBshcKbkJSMC8ax87AsZHQu5nQsuLptDt5o7M3B8sMLm6IzMzLp74FvYY8DNeOW24dwTqYc4NGjRAx44d0alTJ2MQ5rzOU089ZQjJmWeeaQy0gckSsIkTJ2LZsmXY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AFoc/gImDM7FjQf29I6GchYBERABlwlIwFwGGpCdnR2ZGaU4E8AsAI0BvAWgG4CfEilgTWa8jgGDt+OReQO8o6GcRUAERMBlAhIwl4EGZRdtR2YufXElAArZNgAXAnggUpW8sMCKJ7yNNv3X4fUzGAwZX9q8eTM6duyItm3b4qmnnoovM50tArVI4JFHHsHUqVPx3HPPYeRILbVWi00RtmgJWDK2SoQ6eSFgBUNXoaj/Z/jkwj2RmhrfclJXXHEFTjrpJKxYsQI9evSouZKff/4Zt956K95++2289dZb+Pjjj7Ft2zYsXLgQo0aNiqkVnnjiCbA85se8KJzz5s3DrFk0aEOnu+++G//4xz+wcuVKpKWloXv37jjxxBMxceLEmOpQH0/asmULyJ6fN954A1988QW2bt2K1q1bY5999jHaPy8vLySar776CmeddRaeeeYZ/PTTTygrK8PkyZNx9tlno7Cw0BHOdevW4bzzzsOjjz6Kb775BsXFxRg3bpzxt+bNOaW8a3JSflVVFXr16mVcG/tYamqqo/p5eXAs1x6uPosXL8bll19utOWGDRvQokULTJs2DWecccYu7XjOOefg3HPPjXhprVq1wqeffurl5dfkLQFLCGb3CvFCwPJ6fI6i0Sux/MxRaJybFXNlf//9d2Pg6N27NxYsWLBTPhQuigUTj+Eg+N1338UsYNdffz2OPvpoY9Dab7/9kJmZiYceeggcoE444QRD2IITherKK680yucNSmvxgQceAAeD6667DkcddVTM116fTly1ahXat2+PnJwcDB8+HB06dDAGvmeffdYYuHbffXe88soraNyYXvEdid8NGDAA33//Pfbee2+0a9cOS5cuBQfQPfbYwziH7WknUfyYFx+ERowYYfQ51uu///0vSktL8dprr4EDabzl//vf/zb617/+9S/sv3/ENQbsVNuVY2K59nAF33TTTcZDX3p6OqZMmWLcG3z4XLJkCTp37oyXXnoJjRo1qjmdf+cnVHr88cfx5ptvYv78+eD9mYgkAUsEZRfL8ELAGuz+DUr3eRNPHjMIHZvt6KxOq00L6/DDDw95s69fv97o3BSxoqIiHHzwwaA1FIsFtnr1amPw4wDKm61ly5ZGVVkGBzIOlK+++ir692ccTXXi/wcOHGhYCcuWLat52mdePXv2BMWXA6CVl9Nrj3T8119/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" width="432">
+<img src="data:image/png;base64,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" width="432">
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+
+
+<div id="8827fb09-6aff-4143-9ab9-228bc4961988"></div>
+<div class="output_subarea output_javascript ">
+<script type="text/javascript">
+var element = $('#8827fb09-6aff-4143-9ab9-228bc4961988');
+/* Put everything inside the global mpl namespace */
+window.mpl = {};
+
+
+mpl.get_websocket_type = function() {
+    if (typeof(WebSocket) !== 'undefined') {
+        return WebSocket;
+    } else if (typeof(MozWebSocket) !== 'undefined') {
+        return MozWebSocket;
+    } else {
+        alert('Your browser does not have WebSocket support.' +
+              'Please try Chrome, Safari or Firefox ≥ 6. ' +
+              'Firefox 4 and 5 are also supported but you ' +
+              'have to enable WebSockets in about:config.');
+    };
+}
+
+mpl.figure = function(figure_id, websocket, ondownload, parent_element) {
+    this.id = figure_id;
+
+    this.ws = websocket;
+
+    this.supports_binary = (this.ws.binaryType != undefined);
+
+    if (!this.supports_binary) {
+        var warnings = document.getElementById("mpl-warnings");
+        if (warnings) {
+            warnings.style.display = 'block';
+            warnings.textContent = (
+                "This browser does not support binary websocket messages. " +
+                    "Performance may be slow.");
+        }
+    }
+
+    this.imageObj = new Image();
+
+    this.context = undefined;
+    this.message = undefined;
+    this.canvas = undefined;
+    this.rubberband_canvas = undefined;
+    this.rubberband_context = undefined;
+    this.format_dropdown = undefined;
+
+    this.image_mode = 'full';
+
+    this.root = $('<div/>');
+    this._root_extra_style(this.root)
+    this.root.attr('style', 'display: inline-block');
+
+    $(parent_element).append(this.root);
+
+    this._init_header(this);
+    this._init_canvas(this);
+    this._init_toolbar(this);
+
+    var fig = this;
+
+    this.waiting = false;
+
+    this.ws.onopen =  function () {
+            fig.send_message("supports_binary", {value: fig.supports_binary});
+            fig.send_message("send_image_mode", {});
+            if (mpl.ratio != 1) {
+                fig.send_message("set_dpi_ratio", {'dpi_ratio': mpl.ratio});
+            }
+            fig.send_message("refresh", {});
+        }
+
+    this.imageObj.onload = function() {
+            if (fig.image_mode == 'full') {
+                // Full images could contain transparency (where diff images
+                // almost always do), so we need to clear the canvas so that
+                // there is no ghosting.
+                fig.context.clearRect(0, 0, fig.canvas.width, fig.canvas.height);
+            }
+            fig.context.drawImage(fig.imageObj, 0, 0);
+        };
+
+    this.imageObj.onunload = function() {
+        fig.ws.close();
+    }
+
+    this.ws.onmessage = this._make_on_message_function(this);
+
+    this.ondownload = ondownload;
+}
+
+mpl.figure.prototype._init_header = function() {
+    var titlebar = $(
+        '<div class="ui-dialog-titlebar ui-widget-header ui-corner-all ' +
+        'ui-helper-clearfix"/>');
+    var titletext = $(
+        '<div class="ui-dialog-title" style="width: 100%; ' +
+        'text-align: center; padding: 3px;"/>');
+    titlebar.append(titletext)
+    this.root.append(titlebar);
+    this.header = titletext[0];
+}
+
+
+
+mpl.figure.prototype._canvas_extra_style = function(canvas_div) {
+
+}
+
+
+mpl.figure.prototype._root_extra_style = function(canvas_div) {
+
+}
+
+mpl.figure.prototype._init_canvas = function() {
+    var fig = this;
+
+    var canvas_div = $('<div/>');
+
+    canvas_div.attr('style', 'position: relative; clear: both; outline: 0');
+
+    function canvas_keyboard_event(event) {
+        return fig.key_event(event, event['data']);
+    }
+
+    canvas_div.keydown('key_press', canvas_keyboard_event);
+    canvas_div.keyup('key_release', canvas_keyboard_event);
+    this.canvas_div = canvas_div
+    this._canvas_extra_style(canvas_div)
+    this.root.append(canvas_div);
+
+    var canvas = $('<canvas/>');
+    canvas.addClass('mpl-canvas');
+    canvas.attr('style', "left: 0; top: 0; z-index: 0; outline: 0")
+
+    this.canvas = canvas[0];
+    this.context = canvas[0].getContext("2d");
+
+    var backingStore = this.context.backingStorePixelRatio ||
+	this.context.webkitBackingStorePixelRatio ||
+	this.context.mozBackingStorePixelRatio ||
+	this.context.msBackingStorePixelRatio ||
+	this.context.oBackingStorePixelRatio ||
+	this.context.backingStorePixelRatio || 1;
+
+    mpl.ratio = (window.devicePixelRatio || 1) / backingStore;
+
+    var rubberband = $('<canvas/>');
+    rubberband.attr('style', "position: absolute; left: 0; top: 0; z-index: 1;")
+
+    var pass_mouse_events = true;
+
+    canvas_div.resizable({
+        start: function(event, ui) {
+            pass_mouse_events = false;
+        },
+        resize: function(event, ui) {
+            fig.request_resize(ui.size.width, ui.size.height);
+        },
+        stop: function(event, ui) {
+            pass_mouse_events = true;
+            fig.request_resize(ui.size.width, ui.size.height);
+        },
+    });
+
+    function mouse_event_fn(event) {
+        if (pass_mouse_events)
+            return fig.mouse_event(event, event['data']);
+    }
+
+    rubberband.mousedown('button_press', mouse_event_fn);
+    rubberband.mouseup('button_release', mouse_event_fn);
+    // Throttle sequential mouse events to 1 every 20ms.
+    rubberband.mousemove('motion_notify', mouse_event_fn);
+
+    rubberband.mouseenter('figure_enter', mouse_event_fn);
+    rubberband.mouseleave('figure_leave', mouse_event_fn);
+
+    canvas_div.on("wheel", function (event) {
+        event = event.originalEvent;
+        event['data'] = 'scroll'
+        if (event.deltaY < 0) {
+            event.step = 1;
+        } else {
+            event.step = -1;
+        }
+        mouse_event_fn(event);
+    });
+
+    canvas_div.append(canvas);
+    canvas_div.append(rubberband);
+
+    this.rubberband = rubberband;
+    this.rubberband_canvas = rubberband[0];
+    this.rubberband_context = rubberband[0].getContext("2d");
+    this.rubberband_context.strokeStyle = "#000000";
+
+    this._resize_canvas = function(width, height) {
+        // Keep the size of the canvas, canvas container, and rubber band
+        // canvas in synch.
+        canvas_div.css('width', width)
+        canvas_div.css('height', height)
+
+        canvas.attr('width', width * mpl.ratio);
+        canvas.attr('height', height * mpl.ratio);
+        canvas.attr('style', 'width: ' + width + 'px; height: ' + height + 'px;');
+
+        rubberband.attr('width', width);
+        rubberband.attr('height', height);
+    }
+
+    // Set the figure to an initial 600x600px, this will subsequently be updated
+    // upon first draw.
+    this._resize_canvas(600, 600);
+
+    // Disable right mouse context menu.
+    $(this.rubberband_canvas).bind("contextmenu",function(e){
+        return false;
+    });
+
+    function set_focus () {
+        canvas.focus();
+        canvas_div.focus();
+    }
+
+    window.setTimeout(set_focus, 100);
+}
+
+mpl.figure.prototype._init_toolbar = function() {
+    var fig = this;
+
+    var nav_element = $('<div/>')
+    nav_element.attr('style', 'width: 100%');
+    this.root.append(nav_element);
+
+    // Define a callback function for later on.
+    function toolbar_event(event) {
+        return fig.toolbar_button_onclick(event['data']);
+    }
+    function toolbar_mouse_event(event) {
+        return fig.toolbar_button_onmouseover(event['data']);
+    }
+
+    for(var toolbar_ind in mpl.toolbar_items) {
+        var name = mpl.toolbar_items[toolbar_ind][0];
+        var tooltip = mpl.toolbar_items[toolbar_ind][1];
+        var image = mpl.toolbar_items[toolbar_ind][2];
+        var method_name = mpl.toolbar_items[toolbar_ind][3];
+
+        if (!name) {
+            // put a spacer in here.
+            continue;
+        }
+        var button = $('<button/>');
+        button.addClass('ui-button ui-widget ui-state-default ui-corner-all ' +
+                        'ui-button-icon-only');
+        button.attr('role', 'button');
+        button.attr('aria-disabled', 'false');
+        button.click(method_name, toolbar_event);
+        button.mouseover(tooltip, toolbar_mouse_event);
+
+        var icon_img = $('<span/>');
+        icon_img.addClass('ui-button-icon-primary ui-icon');
+        icon_img.addClass(image);
+        icon_img.addClass('ui-corner-all');
+
+        var tooltip_span = $('<span/>');
+        tooltip_span.addClass('ui-button-text');
+        tooltip_span.html(tooltip);
+
+        button.append(icon_img);
+        button.append(tooltip_span);
+
+        nav_element.append(button);
+    }
+
+    var fmt_picker_span = $('<span/>');
+
+    var fmt_picker = $('<select/>');
+    fmt_picker.addClass('mpl-toolbar-option ui-widget ui-widget-content');
+    fmt_picker_span.append(fmt_picker);
+    nav_element.append(fmt_picker_span);
+    this.format_dropdown = fmt_picker[0];
+
+    for (var ind in mpl.extensions) {
+        var fmt = mpl.extensions[ind];
+        var option = $(
+            '<option/>', {selected: fmt === mpl.default_extension}).html(fmt);
+        fmt_picker.append(option)
+    }
+
+    // Add hover states to the ui-buttons
+    $( ".ui-button" ).hover(
+        function() { $(this).addClass("ui-state-hover");},
+        function() { $(this).removeClass("ui-state-hover");}
+    );
+
+    var status_bar = $('<span class="mpl-message"/>');
+    nav_element.append(status_bar);
+    this.message = status_bar[0];
+}
+
+mpl.figure.prototype.request_resize = function(x_pixels, y_pixels) {
+    // Request matplotlib to resize the figure. Matplotlib will then trigger a resize in the client,
+    // which will in turn request a refresh of the image.
+    this.send_message('resize', {'width': x_pixels, 'height': y_pixels});
+}
+
+mpl.figure.prototype.send_message = function(type, properties) {
+    properties['type'] = type;
+    properties['figure_id'] = this.id;
+    this.ws.send(JSON.stringify(properties));
+}
+
+mpl.figure.prototype.send_draw_message = function() {
+    if (!this.waiting) {
+        this.waiting = true;
+        this.ws.send(JSON.stringify({type: "draw", figure_id: this.id}));
+    }
+}
+
+
+mpl.figure.prototype.handle_save = function(fig, msg) {
+    var format_dropdown = fig.format_dropdown;
+    var format = format_dropdown.options[format_dropdown.selectedIndex].value;
+    fig.ondownload(fig, format);
+}
+
+
+mpl.figure.prototype.handle_resize = function(fig, msg) {
+    var size = msg['size'];
+    if (size[0] != fig.canvas.width || size[1] != fig.canvas.height) {
+        fig._resize_canvas(size[0], size[1]);
+        fig.send_message("refresh", {});
+    };
+}
+
+mpl.figure.prototype.handle_rubberband = function(fig, msg) {
+    var x0 = msg['x0'] / mpl.ratio;
+    var y0 = (fig.canvas.height - msg['y0']) / mpl.ratio;
+    var x1 = msg['x1'] / mpl.ratio;
+    var y1 = (fig.canvas.height - msg['y1']) / mpl.ratio;
+    x0 = Math.floor(x0) + 0.5;
+    y0 = Math.floor(y0) + 0.5;
+    x1 = Math.floor(x1) + 0.5;
+    y1 = Math.floor(y1) + 0.5;
+    var min_x = Math.min(x0, x1);
+    var min_y = Math.min(y0, y1);
+    var width = Math.abs(x1 - x0);
+    var height = Math.abs(y1 - y0);
+
+    fig.rubberband_context.clearRect(
+        0, 0, fig.canvas.width, fig.canvas.height);
+
+    fig.rubberband_context.strokeRect(min_x, min_y, width, height);
+}
+
+mpl.figure.prototype.handle_figure_label = function(fig, msg) {
+    // Updates the figure title.
+    fig.header.textContent = msg['label'];
+}
+
+mpl.figure.prototype.handle_cursor = function(fig, msg) {
+    var cursor = msg['cursor'];
+    switch(cursor)
+    {
+    case 0:
+        cursor = 'pointer';
+        break;
+    case 1:
+        cursor = 'default';
+        break;
+    case 2:
+        cursor = 'crosshair';
+        break;
+    case 3:
+        cursor = 'move';
+        break;
+    }
+    fig.rubberband_canvas.style.cursor = cursor;
+}
+
+mpl.figure.prototype.handle_message = function(fig, msg) {
+    fig.message.textContent = msg['message'];
+}
+
+mpl.figure.prototype.handle_draw = function(fig, msg) {
+    // Request the server to send over a new figure.
+    fig.send_draw_message();
+}
+
+mpl.figure.prototype.handle_image_mode = function(fig, msg) {
+    fig.image_mode = msg['mode'];
+}
+
+mpl.figure.prototype.updated_canvas_event = function() {
+    // Called whenever the canvas gets updated.
+    this.send_message("ack", {});
+}
+
+// A function to construct a web socket function for onmessage handling.
+// Called in the figure constructor.
+mpl.figure.prototype._make_on_message_function = function(fig) {
+    return function socket_on_message(evt) {
+        if (evt.data instanceof Blob) {
+            /* FIXME: We get "Resource interpreted as Image but
+             * transferred with MIME type text/plain:" errors on
+             * Chrome.  But how to set the MIME type?  It doesn't seem
+             * to be part of the websocket stream */
+            evt.data.type = "image/png";
+
+            /* Free the memory for the previous frames */
+            if (fig.imageObj.src) {
+                (window.URL || window.webkitURL).revokeObjectURL(
+                    fig.imageObj.src);
+            }
+
+            fig.imageObj.src = (window.URL || window.webkitURL).createObjectURL(
+                evt.data);
+            fig.updated_canvas_event();
+            fig.waiting = false;
+            return;
+        }
+        else if (typeof evt.data === 'string' && evt.data.slice(0, 21) == "data:image/png;base64") {
+            fig.imageObj.src = evt.data;
+            fig.updated_canvas_event();
+            fig.waiting = false;
+            return;
+        }
+
+        var msg = JSON.parse(evt.data);
+        var msg_type = msg['type'];
+
+        // Call the  "handle_{type}" callback, which takes
+        // the figure and JSON message as its only arguments.
+        try {
+            var callback = fig["handle_" + msg_type];
+        } catch (e) {
+            console.log("No handler for the '" + msg_type + "' message type: ", msg);
+            return;
+        }
+
+        if (callback) {
+            try {
+                // console.log("Handling '" + msg_type + "' message: ", msg);
+                callback(fig, msg);
+            } catch (e) {
+                console.log("Exception inside the 'handler_" + msg_type + "' callback:", e, e.stack, msg);
+            }
+        }
+    };
+}
+
+// from http://stackoverflow.com/questions/1114465/getting-mouse-location-in-canvas
+mpl.findpos = function(e) {
+    //this section is from http://www.quirksmode.org/js/events_properties.html
+    var targ;
+    if (!e)
+        e = window.event;
+    if (e.target)
+        targ = e.target;
+    else if (e.srcElement)
+        targ = e.srcElement;
+    if (targ.nodeType == 3) // defeat Safari bug
+        targ = targ.parentNode;
+
+    // jQuery normalizes the pageX and pageY
+    // pageX,Y are the mouse positions relative to the document
+    // offset() returns the position of the element relative to the document
+    var x = e.pageX - $(targ).offset().left;
+    var y = e.pageY - $(targ).offset().top;
+
+    return {"x": x, "y": y};
+};
+
+/*
+ * return a copy of an object with only non-object keys
+ * we need this to avoid circular references
+ * http://stackoverflow.com/a/24161582/3208463
+ */
+function simpleKeys (original) {
+  return Object.keys(original).reduce(function (obj, key) {
+    if (typeof original[key] !== 'object')
+        obj[key] = original[key]
+    return obj;
+  }, {});
+}
+
+mpl.figure.prototype.mouse_event = function(event, name) {
+    var canvas_pos = mpl.findpos(event)
+
+    if (name === 'button_press')
+    {
+        this.canvas.focus();
+        this.canvas_div.focus();
+    }
+
+    var x = canvas_pos.x * mpl.ratio;
+    var y = canvas_pos.y * mpl.ratio;
+
+    this.send_message(name, {x: x, y: y, button: event.button,
+                             step: event.step,
+                             guiEvent: simpleKeys(event)});
+
+    /* This prevents the web browser from automatically changing to
+     * the text insertion cursor when the button is pressed.  We want
+     * to control all of the cursor setting manually through the
+     * 'cursor' event from matplotlib */
+    event.preventDefault();
+    return false;
+}
+
+mpl.figure.prototype._key_event_extra = function(event, name) {
+    // Handle any extra behaviour associated with a key event
+}
+
+mpl.figure.prototype.key_event = function(event, name) {
+
+    // Prevent repeat events
+    if (name == 'key_press')
+    {
+        if (event.which === this._key)
+            return;
+        else
+            this._key = event.which;
+    }
+    if (name == 'key_release')
+        this._key = null;
+
+    var value = '';
+    if (event.ctrlKey && event.which != 17)
+        value += "ctrl+";
+    if (event.altKey && event.which != 18)
+        value += "alt+";
+    if (event.shiftKey && event.which != 16)
+        value += "shift+";
+
+    value += 'k';
+    value += event.which.toString();
+
+    this._key_event_extra(event, name);
+
+    this.send_message(name, {key: value,
+                             guiEvent: simpleKeys(event)});
+    return false;
+}
+
+mpl.figure.prototype.toolbar_button_onclick = function(name) {
+    if (name == 'download') {
+        this.handle_save(this, null);
+    } else {
+        this.send_message("toolbar_button", {name: name});
+    }
+};
+
+mpl.figure.prototype.toolbar_button_onmouseover = function(tooltip) {
+    this.message.textContent = tooltip;
+};
+mpl.toolbar_items = [["Home", "Reset original view", "fa fa-home icon-home", "home"], ["Back", "Back to  previous view", "fa fa-arrow-left icon-arrow-left", "back"], ["Forward", "Forward to next view", "fa fa-arrow-right icon-arrow-right", "forward"], ["", "", "", ""], ["Pan", "Pan axes with left mouse, zoom with right", "fa fa-arrows icon-move", "pan"], ["Zoom", "Zoom to rectangle", "fa fa-square-o icon-check-empty", "zoom"], ["", "", "", ""], ["Download", "Download plot", "fa fa-floppy-o icon-save", "download"]];
+
+mpl.extensions = ["eps", "pdf", "png", "ps", "raw", "svg"];
+
+mpl.default_extension = "png";var comm_websocket_adapter = function(comm) {
+    // Create a "websocket"-like object which calls the given IPython comm
+    // object with the appropriate methods. Currently this is a non binary
+    // socket, so there is still some room for performance tuning.
+    var ws = {};
+
+    ws.close = function() {
+        comm.close()
+    };
+    ws.send = function(m) {
+        //console.log('sending', m);
+        comm.send(m);
+    };
+    // Register the callback with on_msg.
+    comm.on_msg(function(msg) {
+        //console.log('receiving', msg['content']['data'], msg);
+        // Pass the mpl event to the overridden (by mpl) onmessage function.
+        ws.onmessage(msg['content']['data'])
+    });
+    return ws;
+}
+
+mpl.mpl_figure_comm = function(comm, msg) {
+    // This is the function which gets called when the mpl process
+    // starts-up an IPython Comm through the "matplotlib" channel.
+
+    var id = msg.content.data.id;
+    // Get hold of the div created by the display call when the Comm
+    // socket was opened in Python.
+    var element = $("#" + id);
+    var ws_proxy = comm_websocket_adapter(comm)
+
+    function ondownload(figure, format) {
+        window.open(figure.imageObj.src);
+    }
+
+    var fig = new mpl.figure(id, ws_proxy,
+                           ondownload,
+                           element.get(0));
+
+    // Call onopen now - mpl needs it, as it is assuming we've passed it a real
+    // web socket which is closed, not our websocket->open comm proxy.
+    ws_proxy.onopen();
+
+    fig.parent_element = element.get(0);
+    fig.cell_info = mpl.find_output_cell("<div id='" + id + "'></div>");
+    if (!fig.cell_info) {
+        console.error("Failed to find cell for figure", id, fig);
+        return;
+    }
+
+    var output_index = fig.cell_info[2]
+    var cell = fig.cell_info[0];
+
+};
+
+mpl.figure.prototype.handle_close = function(fig, msg) {
+    var width = fig.canvas.width/mpl.ratio
+    fig.root.unbind('remove')
+
+    // Update the output cell to use the data from the current canvas.
+    fig.push_to_output();
+    var dataURL = fig.canvas.toDataURL();
+    // Re-enable the keyboard manager in IPython - without this line, in FF,
+    // the notebook keyboard shortcuts fail.
+    IPython.keyboard_manager.enable()
+    $(fig.parent_element).html('<img src="' + dataURL + '" width="' + width + '">');
+    fig.close_ws(fig, msg);
+}
+
+mpl.figure.prototype.close_ws = function(fig, msg){
+    fig.send_message('closing', msg);
+    // fig.ws.close()
+}
+
+mpl.figure.prototype.push_to_output = function(remove_interactive) {
+    // Turn the data on the canvas into data in the output cell.
+    var width = this.canvas.width/mpl.ratio
+    var dataURL = this.canvas.toDataURL();
+    this.cell_info[1]['text/html'] = '<img src="' + dataURL + '" width="' + width + '">';
+}
+
+mpl.figure.prototype.updated_canvas_event = function() {
+    // Tell IPython that the notebook contents must change.
+    IPython.notebook.set_dirty(true);
+    this.send_message("ack", {});
+    var fig = this;
+    // Wait a second, then push the new image to the DOM so
+    // that it is saved nicely (might be nice to debounce this).
+    setTimeout(function () { fig.push_to_output() }, 1000);
+}
+
+mpl.figure.prototype._init_toolbar = function() {
+    var fig = this;
+
+    var nav_element = $('<div/>')
+    nav_element.attr('style', 'width: 100%');
+    this.root.append(nav_element);
+
+    // Define a callback function for later on.
+    function toolbar_event(event) {
+        return fig.toolbar_button_onclick(event['data']);
+    }
+    function toolbar_mouse_event(event) {
+        return fig.toolbar_button_onmouseover(event['data']);
+    }
+
+    for(var toolbar_ind in mpl.toolbar_items){
+        var name = mpl.toolbar_items[toolbar_ind][0];
+        var tooltip = mpl.toolbar_items[toolbar_ind][1];
+        var image = mpl.toolbar_items[toolbar_ind][2];
+        var method_name = mpl.toolbar_items[toolbar_ind][3];
+
+        if (!name) { continue; };
+
+        var button = $('<button class="btn btn-default" href="#" title="' + name + '"><i class="fa ' + image + ' fa-lg"></i></button>');
+        button.click(method_name, toolbar_event);
+        button.mouseover(tooltip, toolbar_mouse_event);
+        nav_element.append(button);
+    }
+
+    // Add the status bar.
+    var status_bar = $('<span class="mpl-message" style="text-align:right; float: right;"/>');
+    nav_element.append(status_bar);
+    this.message = status_bar[0];
+
+    // Add the close button to the window.
+    var buttongrp = $('<div class="btn-group inline pull-right"></div>');
+    var button = $('<button class="btn btn-mini btn-primary" href="#" title="Stop Interaction"><i class="fa fa-power-off icon-remove icon-large"></i></button>');
+    button.click(function (evt) { fig.handle_close(fig, {}); } );
+    button.mouseover('Stop Interaction', toolbar_mouse_event);
+    buttongrp.append(button);
+    var titlebar = this.root.find($('.ui-dialog-titlebar'));
+    titlebar.prepend(buttongrp);
+}
+
+mpl.figure.prototype._root_extra_style = function(el){
+    var fig = this
+    el.on("remove", function(){
+	fig.close_ws(fig, {});
+    });
+}
+
+mpl.figure.prototype._canvas_extra_style = function(el){
+    // this is important to make the div 'focusable
+    el.attr('tabindex', 0)
+    // reach out to IPython and tell the keyboard manager to turn it's self
+    // off when our div gets focus
+
+    // location in version 3
+    if (IPython.notebook.keyboard_manager) {
+        IPython.notebook.keyboard_manager.register_events(el);
+    }
+    else {
+        // location in version 2
+        IPython.keyboard_manager.register_events(el);
+    }
+
+}
+
+mpl.figure.prototype._key_event_extra = function(event, name) {
+    var manager = IPython.notebook.keyboard_manager;
+    if (!manager)
+        manager = IPython.keyboard_manager;
+
+    // Check for shift+enter
+    if (event.shiftKey && event.which == 13) {
+        this.canvas_div.blur();
+        event.shiftKey = false;
+        // Send a "J" for go to next cell
+        event.which = 74;
+        event.keyCode = 74;
+        manager.command_mode();
+        manager.handle_keydown(event);
+    }
+}
+
+mpl.figure.prototype.handle_save = function(fig, msg) {
+    fig.ondownload(fig, null);
+}
+
+
+mpl.find_output_cell = function(html_output) {
+    // Return the cell and output element which can be found *uniquely* in the notebook.
+    // Note - this is a bit hacky, but it is done because the "notebook_saving.Notebook"
+    // IPython event is triggered only after the cells have been serialised, which for
+    // our purposes (turning an active figure into a static one), is too late.
+    var cells = IPython.notebook.get_cells();
+    var ncells = cells.length;
+    for (var i=0; i<ncells; i++) {
+        var cell = cells[i];
+        if (cell.cell_type === 'code'){
+            for (var j=0; j<cell.output_area.outputs.length; j++) {
+                var data = cell.output_area.outputs[j];
+                if (data.data) {
+                    // IPython >= 3 moved mimebundle to data attribute of output
+                    data = data.data;
+                }
+                if (data['text/html'] == html_output) {
+                    return [cell, data, j];
+                }
+            }
+        }
+    }
+}
+
+// Register the function which deals with the matplotlib target/channel.
+// The kernel may be null if the page has been refreshed.
+if (IPython.notebook.kernel != null) {
+    IPython.notebook.kernel.comm_manager.register_target('matplotlib', mpl.mpl_figure_comm);
+}
+
+</script>
+</div>
+
+</div>
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_html rendered_html output_subarea ">
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAbAAAAEgCAYAAADVKCZpAAAK20lEQVR4Xu3VgQkAAAgCwdx/6eZ4uCaQM3DnCBAgQIBAUGDBzCITIECAAIEzYJ6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECBgwP0CAAAECSQEDlqxNaAIECBAwYH6AAAECBJICBixZm9AECBAgYMD8AAECBAgkBQxYsjahCRAgQMCA+QECBAgQSAoYsGRtQhMgQICAAfMDBAgQIJAUMGDJ2oQmQIAAAQPmBwgQIEAgKWDAkrUJTYAAAQIGzA8QIECAQFLAgCVrE5oAAQIEDJgfIECAAIGkgAFL1iY0AQIECDzIbwEhPy/9RgAAAABJRU5ErkJggg==" width="432">
 </div>
 
 </div>
@@ -13487,7 +14286,7 @@ if (IPython.notebook.kernel != null) {
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 
-<span class="n">complaints</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Consumer_Complaints.csv&#39;</span><span class="p">)</span>
+<span class="n">complaints</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;complaints-2018-07-12_05_32.zip&#39;</span><span class="p">,</span> <span class="n">compression</span><span class="o">=</span><span class="s1">&#39;zip&#39;</span><span class="p">)</span>
 </pre></div>
 
 </div>
@@ -13528,7 +14327,7 @@ if (IPython.notebook.kernel != null) {
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>(39806, 18)</pre>
+<pre>(259436, 18)</pre>
 </div>
 
 </div>
@@ -13541,7 +14340,7 @@ if (IPython.notebook.kernel != null) {
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<p>That's about one million records, each one with 18 columns. Let's take a look at a small sample from the data:</p>
+<p>That's about one quarter of a million records, each one with 18 columns. Let's take a look at a small sample from the data:</p>
 
 </div>
 </div>
@@ -13610,213 +14409,213 @@ if (IPython.notebook.kernel != null) {
   <tbody>
     <tr>
       <th>0</th>
-      <td>04/02/18</td>
-      <td>Checking or savings account</td>
-      <td>Checking account</td>
-      <td>Problem with a lender or other company chargin...</td>
-      <td>Transaction was not authorized</td>
+      <td>01/30/18</td>
+      <td>Money transfer, virtual currency, or money ser...</td>
+      <td>Virtual currency</td>
+      <td>Other transaction problem</td>
       <td>NaN</td>
+      <td>On XX/XX/2017, I purchased XXXX ETH ( Ethereum...</td>
       <td>NaN</td>
-      <td>JPMORGAN CHASE &amp; CO.</td>
-      <td>GA</td>
-      <td>30044</td>
+      <td>Coinbase, Inc.</td>
+      <td>WA</td>
+      <td>981XX</td>
       <td>NaN</td>
-      <td>NaN</td>
+      <td>Consent provided</td>
       <td>Web</td>
-      <td>04/02/18</td>
+      <td>01/30/18</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2861266</td>
+      <td>2797189</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>04/02/18</td>
-      <td>Debt collection</td>
-      <td>Medical debt</td>
-      <td>False statements or representation</td>
-      <td>Attempted to collect wrong amount</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>AR Resources, Inc.</td>
+      <td>03/05/18</td>
+      <td>Credit reporting, credit repair services, or o...</td>
+      <td>Credit reporting</td>
+      <td>Improper use of your report</td>
+      <td>Reporting company used your report improperly</td>
+      <td>Today I was contacted by appointment with XXXX...</td>
+      <td>Company has responded to the consumer and the ...</td>
+      <td>BANK OF AMERICA, NATIONAL ASSOCIATION</td>
       <td>FL</td>
-      <td>327XX</td>
+      <td>334XX</td>
       <td>NaN</td>
-      <td>NaN</td>
+      <td>Consent provided</td>
       <td>Web</td>
-      <td>04/02/18</td>
+      <td>03/12/18</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2861099</td>
+      <td>2833270</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>04/02/18</td>
-      <td>Debt collection</td>
-      <td>Other debt</td>
-      <td>Attempts to collect debt not owed</td>
-      <td>Debt is not yours</td>
-      <td>NaN</td>
+      <td>03/14/18</td>
+      <td>Credit reporting, credit repair services, or o...</td>
+      <td>Credit reporting</td>
+      <td>Incorrect information on your report</td>
+      <td>Public record information inaccurate</td>
+      <td>I have disputed the existence of the inaccurat...</td>
       <td>Company has responded to the consumer and the ...</td>
-      <td>Convergent Resources, Inc.</td>
-      <td>OK</td>
-      <td>73127</td>
+      <td>Experian Information Solutions Inc.</td>
+      <td>IL</td>
+      <td>606XX</td>
       <td>NaN</td>
-      <td>Consent not provided</td>
+      <td>Consent provided</td>
       <td>Web</td>
-      <td>04/02/18</td>
-      <td>Closed with explanation</td>
+      <td>03/14/18</td>
+      <td>Closed with non-monetary relief</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2861194</td>
+      <td>2843768</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>04/02/18</td>
-      <td>Debt collection</td>
-      <td>Payday loan debt</td>
-      <td>Written notification about debt</td>
-      <td>Notification didn't disclose it was an attempt...</td>
+      <td>01/30/18</td>
+      <td>Credit reporting, credit repair services, or o...</td>
+      <td>Credit reporting</td>
+      <td>Incorrect information on your report</td>
+      <td>Account status incorrect</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>Ad Astra Recovery Services Inc</td>
+      <td>HYUNDAI CAPITAL AMERICA</td>
       <td>CA</td>
-      <td>920XX</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Web</td>
-      <td>04/02/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2861166</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>04/02/18</td>
-      <td>Mortgage</td>
-      <td>Conventional home mortgage</td>
-      <td>Trouble during payment process</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NATIONSTAR MORTGAGE</td>
-      <td>TN</td>
-      <td>370XX</td>
-      <td>Servicemember</td>
-      <td>NaN</td>
-      <td>Web</td>
-      <td>04/02/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2862033</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>04/03/18</td>
-      <td>Mortgage</td>
-      <td>Conventional home mortgage</td>
-      <td>Struggling to pay mortgage</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>NATIONSTAR MORTGAGE</td>
-      <td>CA</td>
-      <td>91344</td>
-      <td>NaN</td>
-      <td>Other</td>
-      <td>Web</td>
-      <td>04/03/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2863312</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>04/07/18</td>
-      <td>Debt collection</td>
-      <td>Other debt</td>
-      <td>Written notification about debt</td>
-      <td>Didn't receive enough information to verify debt</td>
-      <td>NaN</td>
-      <td>Company has responded to the consumer and the ...</td>
-      <td>Professional Credit Analysts of MN, Inc.</td>
-      <td>OH</td>
-      <td>45426</td>
+      <td>90045</td>
       <td>NaN</td>
       <td>Consent not provided</td>
       <td>Web</td>
-      <td>04/07/18</td>
-      <td>Closed with explanation</td>
+      <td>01/30/18</td>
+      <td>Closed with non-monetary relief</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2867620</td>
+      <td>2798225</td>
     </tr>
     <tr>
-      <th>7</th>
-      <td>04/03/18</td>
-      <td>Debt collection</td>
-      <td>Medical debt</td>
-      <td>Attempts to collect debt not owed</td>
-      <td>Debt is not yours</td>
+      <th>4</th>
+      <td>01/30/18</td>
+      <td>Checking or savings account</td>
+      <td>Checking account</td>
+      <td>Opening an account</td>
+      <td>Account opened as a result of fraud</td>
       <td>NaN</td>
       <td>NaN</td>
-      <td>Peter Roberts &amp; Associates, Inc.</td>
-      <td>MA</td>
-      <td>021XX</td>
+      <td>FIFTH THIRD FINANCIAL CORPORATION</td>
+      <td>OH</td>
+      <td>44105</td>
       <td>NaN</td>
-      <td>NaN</td>
+      <td>Consent not provided</td>
       <td>Web</td>
-      <td>04/03/18</td>
-      <td>Closed with explanation</td>
+      <td>01/30/18</td>
+      <td>Closed with non-monetary relief</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2862824</td>
+      <td>2797458</td>
     </tr>
     <tr>
-      <th>8</th>
-      <td>04/02/18</td>
+      <th>5</th>
+      <td>03/16/18</td>
+      <td>Credit reporting, credit repair services, or o...</td>
+      <td>Credit reporting</td>
+      <td>Unable to get your credit report or credit score</td>
+      <td>Problem getting your free annual credit report</td>
+      <td>I have tried to get my free annual credit repo...</td>
+      <td>Company has responded to the consumer and the ...</td>
+      <td>TRANSUNION INTERMEDIATE HOLDINGS, INC.</td>
+      <td>PR</td>
+      <td>009XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>03/16/18</td>
+      <td>Closed with non-monetary relief</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2845582</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>03/10/18</td>
       <td>Credit reporting, credit repair services, or o...</td>
       <td>Credit reporting</td>
       <td>Incorrect information on your report</td>
       <td>Information belongs to someone else</td>
-      <td>I was viewing the details of my credit report ...</td>
+      <td>I was denied a loan and received a copy of my ...</td>
       <td>Company has responded to the consumer and the ...</td>
       <td>Experian Information Solutions Inc.</td>
-      <td>OH</td>
-      <td>432XX</td>
+      <td>CA</td>
+      <td>925XX</td>
       <td>NaN</td>
       <td>Consent provided</td>
       <td>Web</td>
-      <td>04/02/18</td>
+      <td>03/10/18</td>
       <td>Closed with non-monetary relief</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2862338</td>
+      <td>2839027</td>
     </tr>
     <tr>
-      <th>9</th>
-      <td>04/04/18</td>
+      <th>7</th>
+      <td>02/09/18</td>
       <td>Debt collection</td>
-      <td>I do not know</td>
-      <td>Communication tactics</td>
-      <td>You told them to stop contacting you, but they...</td>
-      <td>XXXX XXXX has made several calls to my place o...</td>
-      <td>Company believes complaint represents an oppor...</td>
-      <td>Advanced Recovery Systems, Inc.</td>
-      <td>MS</td>
-      <td>394XX</td>
-      <td>NaN</td>
+      <td>Other debt</td>
+      <td>Attempts to collect debt not owed</td>
+      <td>Debt is not yours</td>
+      <td>Ic systems is reporting and attempting a debt ...</td>
+      <td>Company has responded to the consumer and the ...</td>
+      <td>I.C. System, Inc.</td>
+      <td>IL</td>
+      <td>611XX</td>
+      <td>Servicemember</td>
       <td>Consent provided</td>
       <td>Web</td>
-      <td>04/04/18</td>
+      <td>02/14/18</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2865159</td>
+      <td>2808086</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>02/09/18</td>
+      <td>Credit reporting, credit repair services, or o...</td>
+      <td>Credit reporting</td>
+      <td>Incorrect information on your report</td>
+      <td>Personal information incorrect</td>
+      <td>I have had my credit information with Experian...</td>
+      <td>Company has responded to the consumer and the ...</td>
+      <td>Experian Information Solutions Inc.</td>
+      <td>TX</td>
+      <td>752XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>02/09/18</td>
+      <td>Closed with non-monetary relief</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2808563</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>03/07/18</td>
+      <td>Credit reporting, credit repair services, or o...</td>
+      <td>Credit reporting</td>
+      <td>Problem with a credit reporting company's inve...</td>
+      <td>Their investigation did not fix an error on yo...</td>
+      <td>I submitted Numerous request to TransUnion and...</td>
+      <td>Company has responded to the consumer and the ...</td>
+      <td>TRANSUNION INTERMEDIATE HOLDINGS, INC.</td>
+      <td>TX</td>
+      <td>753XX</td>
+      <td>Servicemember</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>03/07/18</td>
+      <td>Closed with explanation</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2835464</td>
     </tr>
   </tbody>
 </table>
@@ -13887,27 +14686,27 @@ if (IPython.notebook.kernel != null) {
   <tbody>
     <tr>
       <th>0</th>
-      <td>Problem with a lender or other company charging your account</td>
+      <td>Other transaction problem</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>False statements or representation</td>
+      <td>Improper use of your report</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Attempts to collect debt not owed</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Written notification about debt</td>
+      <td>Incorrect information on your report</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>Trouble during payment process</td>
+      <td>Opening an account</td>
     </tr>
     <tr>
       <th>5</th>
-      <td>Struggling to pay mortgage</td>
+      <td>Unable to get your credit report or credit score</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>Attempts to collect debt not owed</td>
     </tr>
   </tbody>
 </table>
@@ -14037,27 +14836,27 @@ dtype: object</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>JPMORGAN CHASE &amp; CO.</td>
+      <td>Coinbase, Inc.</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>AR Resources, Inc.</td>
+      <td>BANK OF AMERICA, NATIONAL ASSOCIATION</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>Convergent Resources, Inc.</td>
+      <td>Experian Information Solutions Inc.</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>Ad Astra Recovery Services Inc</td>
+      <td>HYUNDAI CAPITAL AMERICA</td>
     </tr>
     <tr>
       <th>4</th>
-      <td>NATIONSTAR MORTGAGE</td>
+      <td>FIFTH THIRD FINANCIAL CORPORATION</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>Professional Credit Analysts of MN, Inc.</td>
+      <th>5</th>
+      <td>TRANSUNION INTERMEDIATE HOLDINGS, INC.</td>
     </tr>
   </tbody>
 </table>
@@ -14143,54 +14942,117 @@ dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>548</th>
-      <td>04/06/18</td>
+      <th>10</th>
+      <td>03/06/18</td>
       <td>Mortgage</td>
-      <td>Other type of mortgage</td>
+      <td>Conventional home mortgage</td>
+      <td>Struggling to pay mortgage</td>
+      <td>NaN</td>
+      <td>In XXXX of 2017 I transitioned into a new job. Almost immediately at my new job I experienced inappropriate behavior by my superior which caused me to quit. In the coming months I experienced XXXX, XXXX  and gained XXXX pounds. I also was struggling to pay my mortgage due to loss of income and the XXXX. Finally at the end of XX/XX/2017 I was able to get a job. I have called the mortgage company, M &amp; T Bank, to start the process of catching up on my mortgage payments. I offered to make payments to M &amp; T Bank every other Friday until my mortgage is current. On the day that I called the representative stated that they had placed my mortgage in foreclosure that very day. Literally the day that I called. I told them that I find it no coincidence that the day I call is the day they place my house in foreclosure. I again offered to make payments every other week until I'm caught up. I said I would give them all my money for the next couple of months. She stated that I would need to send them over {$7000.00} that day to stop the foreclosure. My only other option is apply for a loan modification loan, which offers no guarantee I will be approved or that the foreclosure will be stopped. While they decide to approve me for the loan modification, the foreclosure will continue to proceed. M &amp; T Bank has a consumer who is very willing to make payments to bring their mortgage current. I do not want to be homeless, I just want to pay my bills and take care of my family. They have made a very difficult last few months infinitely worse. Please help me save my family and our home.</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>CA</td>
+      <td>925XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>03/06/18</td>
+      <td>Closed with non-monetary relief</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2835028</td>
+    </tr>
+    <tr>
+      <th>599</th>
+      <td>03/18/18</td>
+      <td>Checking or savings account</td>
+      <td>Checking account</td>
+      <td>Managing an account</td>
+      <td>Problem accessing account</td>
+      <td>I opened an account with XXXX XXXX and soon after there was issue with account and I can't use it. I was transferred from department to department.</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>MN</td>
+      <td>554XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>03/18/18</td>
+      <td>Closed with explanation</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2846703</td>
+    </tr>
+    <tr>
+      <th>1218</th>
+      <td>10/02/17</td>
+      <td>Mortgage</td>
+      <td>FHA mortgage</td>
+      <td>Struggling to pay mortgage</td>
+      <td>NaN</td>
+      <td>My Daughter was about 4 months behind on her home mortgage payment. \nWhen I found out about it. I contacted her mortgage bank. I inquired as to the amount required to bring the loan back to current status. \nThe Bank XXXX M &amp; T Bank Correspondence Address :  XXXX XXXX, XXXX XXXX XXXX XXXX XXXX XXXX, NY XXXX The amount on the statement was XXXX $ mailed to her. \nTalking to a XXXX XXXX from M &amp; T Bank. He told the actual amount needed to bring the the mortgage back to current was XXXX XXXX This amount includes 4 months of back payments, plus the next month payment of XXXX $ for XXXX of XXXX. \nSo I payed XXXX on XXXX XXXX XXXX by Electronic Bank to bank transfer directly from my checking account. \nEach monthly payment is XXXX XXXX \n\nEither Friday XXXX XXXX or Sat. XXXX XXXX my daughter gets another Mortgage statement from M &amp; T Bank. It states she owes one back payment plus the payment for XXXX. This is not correct, because the amount to bring it to current status was already paid in full. Days earlier.</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>MN</td>
+      <td>553XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>10/02/17</td>
+      <td>Closed with monetary relief</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2690388</td>
+    </tr>
+    <tr>
+      <th>1361</th>
+      <td>09/27/17</td>
+      <td>Mortgage</td>
+      <td>Conventional home mortgage</td>
+      <td>Trouble during payment process</td>
+      <td>NaN</td>
+      <td>jumping to few months back XXXX XXXX XXXX ) ... rather beginning the story from XXXX. \n\naround the month of XXXX i had contacted M &amp; T Bank customer service regarding why i got enrolled into forced escrow program. was told because they paid the back taxes, i told them i paid them and sent the proof of payments via email to the email they provided me. \n\nthen another call i made to follow up regarding how the increase is was too much for me and again, why did it go into escrow?!? rep told me : " oh if you send {$530.00} and request to be removed via email to the same email address, it will be removed from escrow and then you 'll be responsible for taxes '' i said - " fine ''. \n\nno resolution and then i received a statement with a balance of {$5200.00}!! i called again and was told to send an odd amount of {$750.00} on XXXX and went to a local branch and made cash payment. at the branch had to call customer service with the teller because the teller had know idea what to do with the payment. customer service explained it to her and took my payment. still did not remove me from escrow. \n\ncalled after day to confirm the payment and still no help and then was transferred to home owners assistance program. i explained the hardship situation to the guy and the guy said " sorry there 's nothing we can do. '' my mortgage jumped from {$1900.00} to {$2500.00} which is a {$600.00} increase that i ca n't afford because of the forced escrow program without any notification. \n\nmy tax XXXX gross income was {$54000.00} struggling to survive with other expenses and life. i 'm sacrificing money to go to M &amp; T bank mortgage because i do n't want to go into foreclosure. \n\nXXXX XXXX i went into XXXX XXXX and i do not have health insurance because i ca n't afford it. i am going to get hit with approx $ XXXX XXXX bill and do not know what i 'm going to do. \n\non another note : i 've also called a few times last year to ask to reduce my 6.25 % interest rate and again was told there 's nothing they can do i guess if fine with the escrow program but i need help to reduce my payments so i can continue to live at my home. i 've asked on multiple calls what can we do and continued to say " there 's nothing we can do '' or " when you go into default, then maybe we can help '' which i do n't want to do to jeopordize my credit which i 'm slowly re-building. \n\nhope you can help? thank you in advance, XXXX XXXX</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>CT</td>
+      <td>069XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>09/27/17</td>
+      <td>Closed with explanation</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2686463</td>
+    </tr>
+    <tr>
+      <th>1553</th>
+      <td>11/02/17</td>
+      <td>Mortgage</td>
+      <td>Home equity loan or line of credit (HELOC)</td>
       <td>Struggling to pay mortgage</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
       <td>M&amp;T BANK CORPORATION</td>
-      <td>NJ</td>
-      <td>07457</td>
+      <td>MD</td>
+      <td>20879</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Referral</td>
-      <td>05/15/18</td>
+      <td>11/02/17</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2908144</td>
+      <td>2718696</td>
     </tr>
     <tr>
-      <th>972</th>
-      <td>05/16/18</td>
-      <td>Mortgage</td>
-      <td>FHA mortgage</td>
-      <td>Unable to get your credit report or credit score</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>CT</td>
-      <td>06424</td>
-      <td>NaN</td>
-      <td>Consent not provided</td>
-      <td>Web</td>
-      <td>05/16/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2908274</td>
-    </tr>
-    <tr>
-      <th>1329</th>
-      <td>04/10/18</td>
+      <th>2073</th>
+      <td>12/01/17</td>
       <td>Credit card or prepaid card</td>
       <td>General-purpose credit card or charge card</td>
-      <td>Other features, terms, or problems</td>
-      <td>Problem with customer service</td>
+      <td>Fees or interest</td>
+      <td>Problem with fees</td>
       <td>NaN</td>
       <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
       <td>M&amp;T BANK CORPORATION</td>
@@ -14199,74 +15061,11 @@ dtype: object</pre>
       <td>NaN</td>
       <td>NaN</td>
       <td>Referral</td>
-      <td>05/17/18</td>
+      <td>12/01/17</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2910734</td>
-    </tr>
-    <tr>
-      <th>2063</th>
-      <td>04/12/18</td>
-      <td>Mortgage</td>
-      <td>FHA mortgage</td>
-      <td>Applying for a mortgage or refinancing an existing mortgage</td>
-      <td>NaN</td>
-      <td>I had a mortgage with this bank for the past year and some months. During the time, I made all payments on time, including even some dubious increase in the monthly payment from {$3400.00} to {$3700.00}. I did my best under difficult circumstances to make timely payments. \n\nDuring the time, I tried I called them several times to see if we can get a refinance, but each time they flatly denied and wouldn't go any further to explain why, and at the time we were getting a lot of offers from other institutions to refinance. Nonetheless, I continued to make my payments. \n\nLast month, XX/XX/XXXX, we were finally able to close a refi with a different lender who wired M &amp; T 's payoff to them on the same date as above. Before then, they had been made aware of this closing and were totally involved. \n\nAs expected they closed my online account that I had been using to transact business with them and retrieve documents and messages on the same day the principal was paid off. The processed it and effectively zeroed out the account. \n\nOn XX/XX/XXXX, I saw that the regular transfer that always went out to them on the first day of the month had been initiated and was pending on my XXXX XXXX XXXXXXXX account. I called them immediately to let them know that they my account had been closed with them and I don't owe anything to them. I made aware I had a new mortgage that was due and therefore I need that money to pay the new lender. \n\nWe did a lot of back and forth on the phone and told me they would investigate and take the necessary action. \n\nAs I write this complaint, on XX/XX/XXXX, they neither have returned my money nor return my call. I am having to borrow money, not only for my new mortgage, but also other expenses that we incur as a young bottom of the barrel family struggling to survive in one most expensive places on earth : XXXX XXXX XXXX XXXX of California. \n\nEvery cent we earn is important for us! \n\nIt is certainly not right that this bank has unlawfully taken our money for over a week without making any attempt to return it, or even providing me a simple customer service of letting me know what is going on.</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>CA</td>
-      <td>945XX</td>
-      <td>NaN</td>
-      <td>Consent provided</td>
-      <td>Web</td>
-      <td>04/12/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2873720</td>
-    </tr>
-    <tr>
-      <th>2261</th>
-      <td>04/09/18</td>
-      <td>Mortgage</td>
-      <td>Other type of mortgage</td>
-      <td>Trouble during payment process</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>MD</td>
-      <td>20746</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Referral</td>
-      <td>04/10/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2871245</td>
-    </tr>
-    <tr>
-      <th>3436</th>
-      <td>04/18/18</td>
-      <td>Mortgage</td>
-      <td>Conventional home mortgage</td>
-      <td>Trouble during payment process</td>
-      <td>NaN</td>
-      <td>I am contacting your office because of an increasingly frustrating issue with XXXX XXXX XXXX concerning my mortgage. I have attached my original document to M &amp; T and all the following correspondence. I believe the issues are clearly represented in my correspondence, and because of the inexplicable delays in responding to my simple requests, I can only begin to suspect that there is possible fraudulent action taking place. Please find all documentation concerning this dispute. I will continue to make the last undisputed payment amount as of XX/XX/2018 until this dispute is settled appropriately, however there are only two-three payments remaining and once paid, the likelihood of my collecting any overpaid or misapplied payments will be nil. I respectfully request you and your office immediate investigation and assistance in resolving this situation.</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>TX</td>
-      <td>789XX</td>
-      <td>NaN</td>
-      <td>Consent provided</td>
-      <td>Web</td>
-      <td>04/18/18</td>
-      <td>Closed with monetary relief</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2879813</td>
+      <td>2744498</td>
     </tr>
   </tbody>
 </table>
@@ -14352,49 +15151,112 @@ dtype: object</pre>
   </thead>
   <tbody>
     <tr>
-      <th>548</th>
-      <td>04/06/18</td>
+      <th>10</th>
+      <td>03/06/18</td>
       <td>Mortgage</td>
-      <td>Other type of mortgage</td>
+      <td>Conventional home mortgage</td>
+      <td>Struggling to pay mortgage</td>
+      <td>NaN</td>
+      <td>In XXXX of 2017 I transitioned into a new job. Almost immediately at my new job I experienced inappropriate behavior by my superior which caused me to quit. In the coming months I experienced XXXX, XXXX  and gained XXXX pounds. I also was struggling to pay my mortgage due to loss of income and the XXXX. Finally at the end of XX/XX/2017 I was able to get a job. I have called the mortgage company, M &amp; T Bank, to start the process of catching up on my mortgage payments. I offered to make payments to M &amp; T Bank every other Friday until my mortgage is current. On the day that I called the representative stated that they had placed my mortgage in foreclosure that very day. Literally the day that I called. I told them that I find it no coincidence that the day I call is the day they place my house in foreclosure. I again offered to make payments every other week until I'm caught up. I said I would give them all my money for the next couple of months. She stated that I would need to send them over {$7000.00} that day to stop the foreclosure. My only other option is apply for a loan modification loan, which offers no guarantee I will be approved or that the foreclosure will be stopped. While they decide to approve me for the loan modification, the foreclosure will continue to proceed. M &amp; T Bank has a consumer who is very willing to make payments to bring their mortgage current. I do not want to be homeless, I just want to pay my bills and take care of my family. They have made a very difficult last few months infinitely worse. Please help me save my family and our home.</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>CA</td>
+      <td>925XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>03/06/18</td>
+      <td>Closed with non-monetary relief</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2835028</td>
+    </tr>
+    <tr>
+      <th>1218</th>
+      <td>10/02/17</td>
+      <td>Mortgage</td>
+      <td>FHA mortgage</td>
+      <td>Struggling to pay mortgage</td>
+      <td>NaN</td>
+      <td>My Daughter was about 4 months behind on her home mortgage payment. \nWhen I found out about it. I contacted her mortgage bank. I inquired as to the amount required to bring the loan back to current status. \nThe Bank XXXX M &amp; T Bank Correspondence Address :  XXXX XXXX, XXXX XXXX XXXX XXXX XXXX XXXX, NY XXXX The amount on the statement was XXXX $ mailed to her. \nTalking to a XXXX XXXX from M &amp; T Bank. He told the actual amount needed to bring the the mortgage back to current was XXXX XXXX This amount includes 4 months of back payments, plus the next month payment of XXXX $ for XXXX of XXXX. \nSo I payed XXXX on XXXX XXXX XXXX by Electronic Bank to bank transfer directly from my checking account. \nEach monthly payment is XXXX XXXX \n\nEither Friday XXXX XXXX or Sat. XXXX XXXX my daughter gets another Mortgage statement from M &amp; T Bank. It states she owes one back payment plus the payment for XXXX. This is not correct, because the amount to bring it to current status was already paid in full. Days earlier.</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>MN</td>
+      <td>553XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>10/02/17</td>
+      <td>Closed with monetary relief</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2690388</td>
+    </tr>
+    <tr>
+      <th>1361</th>
+      <td>09/27/17</td>
+      <td>Mortgage</td>
+      <td>Conventional home mortgage</td>
+      <td>Trouble during payment process</td>
+      <td>NaN</td>
+      <td>jumping to few months back XXXX XXXX XXXX ) ... rather beginning the story from XXXX. \n\naround the month of XXXX i had contacted M &amp; T Bank customer service regarding why i got enrolled into forced escrow program. was told because they paid the back taxes, i told them i paid them and sent the proof of payments via email to the email they provided me. \n\nthen another call i made to follow up regarding how the increase is was too much for me and again, why did it go into escrow?!? rep told me : " oh if you send {$530.00} and request to be removed via email to the same email address, it will be removed from escrow and then you 'll be responsible for taxes '' i said - " fine ''. \n\nno resolution and then i received a statement with a balance of {$5200.00}!! i called again and was told to send an odd amount of {$750.00} on XXXX and went to a local branch and made cash payment. at the branch had to call customer service with the teller because the teller had know idea what to do with the payment. customer service explained it to her and took my payment. still did not remove me from escrow. \n\ncalled after day to confirm the payment and still no help and then was transferred to home owners assistance program. i explained the hardship situation to the guy and the guy said " sorry there 's nothing we can do. '' my mortgage jumped from {$1900.00} to {$2500.00} which is a {$600.00} increase that i ca n't afford because of the forced escrow program without any notification. \n\nmy tax XXXX gross income was {$54000.00} struggling to survive with other expenses and life. i 'm sacrificing money to go to M &amp; T bank mortgage because i do n't want to go into foreclosure. \n\nXXXX XXXX i went into XXXX XXXX and i do not have health insurance because i ca n't afford it. i am going to get hit with approx $ XXXX XXXX bill and do not know what i 'm going to do. \n\non another note : i 've also called a few times last year to ask to reduce my 6.25 % interest rate and again was told there 's nothing they can do i guess if fine with the escrow program but i need help to reduce my payments so i can continue to live at my home. i 've asked on multiple calls what can we do and continued to say " there 's nothing we can do '' or " when you go into default, then maybe we can help '' which i do n't want to do to jeopordize my credit which i 'm slowly re-building. \n\nhope you can help? thank you in advance, XXXX XXXX</td>
+      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
+      <td>M&amp;T BANK CORPORATION</td>
+      <td>CT</td>
+      <td>069XX</td>
+      <td>NaN</td>
+      <td>Consent provided</td>
+      <td>Web</td>
+      <td>09/27/17</td>
+      <td>Closed with explanation</td>
+      <td>Yes</td>
+      <td>NaN</td>
+      <td>2686463</td>
+    </tr>
+    <tr>
+      <th>1553</th>
+      <td>11/02/17</td>
+      <td>Mortgage</td>
+      <td>Home equity loan or line of credit (HELOC)</td>
       <td>Struggling to pay mortgage</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
       <td>M&amp;T BANK CORPORATION</td>
-      <td>NJ</td>
-      <td>07457</td>
+      <td>MD</td>
+      <td>20879</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Referral</td>
-      <td>05/15/18</td>
+      <td>11/02/17</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2908144</td>
+      <td>2718696</td>
     </tr>
     <tr>
-      <th>972</th>
-      <td>05/16/18</td>
+      <th>4235</th>
+      <td>11/29/17</td>
       <td>Mortgage</td>
-      <td>FHA mortgage</td>
-      <td>Unable to get your credit report or credit score</td>
+      <td>Conventional home mortgage</td>
+      <td>Struggling to pay mortgage</td>
       <td>NaN</td>
       <td>NaN</td>
       <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
       <td>M&amp;T BANK CORPORATION</td>
-      <td>CT</td>
-      <td>06424</td>
+      <td>PA</td>
+      <td>19035</td>
       <td>NaN</td>
-      <td>Consent not provided</td>
-      <td>Web</td>
-      <td>05/16/18</td>
+      <td>NaN</td>
+      <td>Referral</td>
+      <td>12/01/17</td>
       <td>Closed with explanation</td>
       <td>Yes</td>
       <td>NaN</td>
-      <td>2908274</td>
+      <td>2743372</td>
     </tr>
     <tr>
-      <th>2063</th>
+      <th>5188</th>
       <td>04/12/18</td>
       <td>Mortgage</td>
       <td>FHA mortgage</td>
@@ -14413,69 +15275,6 @@ dtype: object</pre>
       <td>Yes</td>
       <td>NaN</td>
       <td>2873720</td>
-    </tr>
-    <tr>
-      <th>2261</th>
-      <td>04/09/18</td>
-      <td>Mortgage</td>
-      <td>Other type of mortgage</td>
-      <td>Trouble during payment process</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>MD</td>
-      <td>20746</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Referral</td>
-      <td>04/10/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2871245</td>
-    </tr>
-    <tr>
-      <th>3436</th>
-      <td>04/18/18</td>
-      <td>Mortgage</td>
-      <td>Conventional home mortgage</td>
-      <td>Trouble during payment process</td>
-      <td>NaN</td>
-      <td>I am contacting your office because of an increasingly frustrating issue with XXXX XXXX XXXX concerning my mortgage. I have attached my original document to M &amp; T and all the following correspondence. I believe the issues are clearly represented in my correspondence, and because of the inexplicable delays in responding to my simple requests, I can only begin to suspect that there is possible fraudulent action taking place. Please find all documentation concerning this dispute. I will continue to make the last undisputed payment amount as of XX/XX/2018 until this dispute is settled appropriately, however there are only two-three payments remaining and once paid, the likelihood of my collecting any overpaid or misapplied payments will be nil. I respectfully request you and your office immediate investigation and assistance in resolving this situation.</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>TX</td>
-      <td>789XX</td>
-      <td>NaN</td>
-      <td>Consent provided</td>
-      <td>Web</td>
-      <td>04/18/18</td>
-      <td>Closed with monetary relief</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2879813</td>
-    </tr>
-    <tr>
-      <th>3594</th>
-      <td>04/24/18</td>
-      <td>Mortgage</td>
-      <td>Other type of mortgage</td>
-      <td>Struggling to pay mortgage</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Company has responded to the consumer and the CFPB and chooses not to provide a public response</td>
-      <td>M&amp;T BANK CORPORATION</td>
-      <td>CT</td>
-      <td>06475</td>
-      <td>NaN</td>
-      <td>NaN</td>
-      <td>Referral</td>
-      <td>04/27/18</td>
-      <td>Closed with explanation</td>
-      <td>Yes</td>
-      <td>NaN</td>
-      <td>2884930</td>
     </tr>
   </tbody>
 </table>
@@ -14569,35 +15368,56 @@ dtype: object</pre>
   <tbody>
     <tr>
       <th>0</th>
-      <td>2</td>
+      <td>5</td>
       <td>Struggling to pay mortgage</td>
-      <td>16</td>
-      <td>45.714286</td>
+      <td>122</td>
+      <td>45.018450</td>
     </tr>
     <tr>
       <th>1</th>
-      <td>3</td>
+      <td>6</td>
       <td>Trouble during payment process</td>
-      <td>14</td>
-      <td>85.714286</td>
+      <td>119</td>
+      <td>88.929889</td>
     </tr>
     <tr>
       <th>2</th>
-      <td>0</td>
+      <td>1</td>
       <td>Applying for a mortgage or refinancing an existing mortgage</td>
-      <td>3</td>
-      <td>94.285714</td>
+      <td>11</td>
+      <td>92.988930</td>
     </tr>
     <tr>
       <th>3</th>
-      <td>1</td>
+      <td>2</td>
       <td>Closing on a mortgage</td>
-      <td>1</td>
-      <td>97.142857</td>
+      <td>10</td>
+      <td>96.678967</td>
     </tr>
     <tr>
       <th>4</th>
+      <td>0</td>
+      <td>Applying for a mortgage</td>
+      <td>3</td>
+      <td>97.785978</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>3</td>
+      <td>Incorrect information on your report</td>
+      <td>3</td>
+      <td>98.892989</td>
+    </tr>
+    <tr>
+      <th>6</th>
       <td>4</td>
+      <td>Problem with a credit reporting company's investigation into an existing problem</td>
+      <td>2</td>
+      <td>99.630996</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>7</td>
       <td>Unable to get your credit report or credit score</td>
       <td>1</td>
       <td>100.000000</td>
