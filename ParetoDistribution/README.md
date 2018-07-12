@@ -2,7 +2,7 @@
 
 ## Viewing the Jupyter notebook
 
-Just in case you don't want to bother with Jupyter right now, you will find the notebook rendered as an HTML file [here](https://github.com/marciogualtieri/EssentialStatisticsForDataScience/blob/master/ParetoDistribution/Statistics+For+Data+Scientists+-+Distributions.ipynb).
+Just in case you don't want to bother with Jupyter right now, you will find the notebook rendered as an HTML file [here](https://marciogualtieri.github.io/EssentialStatistics/ParetoDistribution/html/Essential%20Statistics%20For%20Data%20Science%20-%20The%20Pareto%20Distribution.html).
 
 If you want to execute the code in the Jupter notebook from the lesson, you may follow the instructions from the following sections.
 
